@@ -5,11 +5,16 @@
 <div class="row">
 
 % my $count = 0;
-% foreach my $video (videos->list) {
+% my @videos = videos->list;
+% while (my $video = shift @videos) {
+  % $count++;
   <div class="col-lg-6">
     <h4><%= $video->title %>  - <%= $video->metadata('date') %></h4>
     %= include 'include/video', video => $video
   </div>
-% $count++;
+  % if  ($count % 2 == 0 && @videos) {
+</div>
+<div class="row">
+  % }
 % }
 </div>
