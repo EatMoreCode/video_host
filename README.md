@@ -43,12 +43,12 @@ Gotcha. Try this:
     $ cd video_host
     $ morbo script/video_host --listen http://\*:2345
 
-Hit http://localhost:2345 and kick the tires (well, tire).
+Hit `http://localhost:2345` and kick the tires (well, tire).
 
 OK, how do I add videos?
 ------------------------
 
-Under your 'video_directory' (in the config) you need to have:
+Under your `video_directory` path (in the config) you need to have:
 
 * one directory per video (name is unimportant - make it meaningful to you)
 * one video file inside that directory called `video.mp4`
@@ -56,6 +56,6 @@ Under your 'video_directory' (in the config) you need to have:
 
 The `metadata.txt` file should contain key: value pairs, thus:
 
-   title: My lovely video!
-   date: 2014-10-10
+    title: My lovely video!
+    date: 2014-10-10
 
