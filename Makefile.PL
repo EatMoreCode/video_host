@@ -8,7 +8,9 @@ WriteMakefile(
   AUTHOR    => 'Justin Hawkins <justin@eatmorecode.com>',
   ABSTRACT_FROM => 'lib/VideoHost.pm',
   VERSION_FROM => 'lib/VideoHost.pm',
-  PREREQ_PM => {'Mojolicious' => '5.62'},
+  PREREQ_PM => {'Mojolicious' => '5.62',
+                'Moose' => '2.1005',
+               },
   EXE_FILES => [ 'script/video_host' ],
   test      => {TESTS => 't/*.t'},
   META_MERGE    => {
