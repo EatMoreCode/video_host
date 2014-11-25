@@ -30,7 +30,7 @@ http://mojolicio.us/perldoc/Mojolicious/Guides/Cookbook#DEPLOYMENT
 
     $ cp lib/VideoHost/video_host.conf SOMEDIR/video_host.conf
     $ edit SOMEDIR/video_host.conf
-    $ MOJOCONFIG SOMEDIR/video_host.conf hypnotoad `which video_host`
+    $ MOJO_CONFIG=SOMEDIR/video_host.conf hypnotoad `which video_host`
 
 Open your browser and enjoy.
 
