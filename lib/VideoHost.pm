@@ -38,6 +38,10 @@ sub startup {
   # Router
   my $r = $self->routes;
 
+  # Set namespace, to support older Mojolicious versions where this was
+  # not the default
+  $r->namespaces(['VideoHost::Controller']);
+
   # Normal route to controller
   $r->get('/')->to('root#index');
   $r->get('/video/:short_name')->to('root#video_stream')->name('video');
