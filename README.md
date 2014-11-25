@@ -45,6 +45,9 @@ Gotcha. Try this:
 
 Hit `http://localhost:2345` and kick the tires (well, tire).
 
+To play some more, add your own videos under t/testdata (see the next
+section).
+
 OK, how do I add videos?
 ------------------------
 
