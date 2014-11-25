@@ -53,9 +53,17 @@ Under your `video_directory` path (in the config) you need to have:
 * one directory per video (name is unimportant - make it meaningful to you)
 * one video file inside that directory called `video.mp4`
 * one metadata file called `metadata.txt`
+* (optional) a file called `poster.jpg` - an image shown before the video is loaded
+* (optional) a webvtt file called `tracks.vtt` containing captioning information
 
 The `metadata.txt` file should contain key: value pairs, thus:
 
     title: My lovely video!
     date: 2014-10-10
 
+Thanks to
+---------
+
+* http://www.videojs.com - Video.js
+* http://mojolicio.us - Awesome!
+* My wife for inspiring the project - Even more Awesome!
