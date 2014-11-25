@@ -1,0 +1,15 @@
+%layout 'default';
+
+<p>Videos sorted in reverse chronological order</p>
+
+<div class="row">
+
+% my $count = 0;
+% foreach my $video (videos->list) {
+  <div class="col-lg-6">
+    <h4><%= $video->title %>  - <%= $video->metadata('date') %></h4>
+    %= include 'include/video', video => $video
+  </div>
+% $count++;
+% }
+</div>
