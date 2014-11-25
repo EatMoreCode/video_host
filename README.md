@@ -21,6 +21,7 @@ A perlbrew setup is recommended!
     $ make test
     $ make install
 
+CPAN coming soon!
 
 Running
 -------
