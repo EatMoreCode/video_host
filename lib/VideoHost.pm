@@ -24,8 +24,6 @@ sub startup {
   # Load config
   $self->plugin('Config');
 
-  $self->config(hypnotoad => {listen => ['http://*:1024']});
-
   # Router
   my $r = $self->routes;
 
