@@ -44,6 +44,7 @@ sub metadata {
   while (my $line = <$fh>) {
     chomp $line;
     my ($k, $v) = ($line =~ /^(\w+)\s*:\s*(.*?)$/);
+    next unless $k;
     if ($k eq $key) { return $v }
   }
   return;
