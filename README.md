@@ -5,7 +5,8 @@ You want to host your own videos online to share with friends. You don't want
 to install a lot of dependancies, manage a database or install new modules on
 your web server.
 
-You do want to be able to add videos by dropping them into a file tree.
+You do want to be able to add videos by dropping them into a file tree, and
+give people a URL to look at your videos with no complications.
 
 You want this.
 
