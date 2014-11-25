@@ -6,6 +6,12 @@ use VideoHost::Video::Storage;
 use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 
+=head1 NAME
+
+VideoHost - filesystem based personal video hosting
+
+=cut
+
 our $VERSION = '1.0';
 
 # This method will run once at server start
@@ -23,6 +29,11 @@ sub startup {
 
   # Load config
   $self->plugin('Config');
+
+  # configure logging
+  if ($self->config->{log}->{path}) {
+    $self->log(Mojo::Log->new(path => $self->config->{log}->{path}, level => $self->config->{log}->{level} || 'info'));
+  }
 
   # Router
   my $r = $self->routes;
