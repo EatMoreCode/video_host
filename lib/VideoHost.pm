@@ -12,7 +12,7 @@ VideoHost - filesystem based personal video hosting
 
 =cut
 
-our $VideoHost::VERSION = 0.1;
+$VideoHost::VERSION = 0.1;
 
 # This method will run once at server start
 sub startup {
