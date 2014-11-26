@@ -1,6 +1,7 @@
 {{$NEXT}}
 
     * Fix dist.ini 
+    * Remove superfluous Mojolicious skeleton index.html
 
 0.143300  2014-11-26 16:57:07 Australia/Adelaide (TRIAL RELEASE)
 
