@@ -8,7 +8,20 @@ use File::Spec::Functions 'catdir';
 
 =head1 NAME
 
-App::VideoHost - filesystem based personal video hosting
+App::VideoHost - Filesystem based personal video hosting
+
+=head2 VERSION
+
+version 0.0
+
+=head1 SYNOPSIS
+
+Just drop videos and text files containing the metadata into a directory of
+your choice, then:
+
+     cp lib/VideoHost/video_host.conf $SOMEDIR/video_host.conf
+     edit $SOMEDIR/video_host.conf
+     MOJO_CONFIG=$SOMEDIR/video_host.conf hypnotoad `which video_host`
 
 =cut
 
