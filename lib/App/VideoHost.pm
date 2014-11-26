@@ -1,14 +1,14 @@
-package VideoHost;
+package App::VideoHost;
 
 use Mojo::Base 'Mojolicious';
-use VideoHost::Video::Storage;
+use App::VideoHost::Video::Storage;
 
 use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 
 =head1 NAME
 
-VideoHost - filesystem based personal video hosting
+App::VideoHost - filesystem based personal video hosting
 
 =cut
 
@@ -38,7 +38,7 @@ sub startup {
 
   # Set namespace, to support older Mojolicious versions where this was
   # not the default
-  $r->namespaces(['VideoHost::Controller']);
+  $r->namespaces(['App::VideoHost::Controller']);
 
   # Normal route to controller
   $r->get('/')->to('root#index');
@@ -48,7 +48,7 @@ sub startup {
 
   $self->helper(videos => sub {
     my $self = shift;
-    state $videos = VideoHost::Video::Storage->new(directory => $self->config->{ video_directory }); 
+    state $videos = App::VideoHost::Video::Storage->new(directory => $self->config->{ video_directory }); 
     return $videos;
   });
 

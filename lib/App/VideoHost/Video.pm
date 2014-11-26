@@ -1,4 +1,4 @@
-package VideoHost::Video;
+package App::VideoHost::Video;
 
 use Moose;
 use File::Spec;

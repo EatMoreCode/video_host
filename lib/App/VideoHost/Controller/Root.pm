@@ -1,4 +1,4 @@
-package VideoHost::Controller::Root;
+package App::VideoHost::Controller::Root;
 
 use Mojo::Base 'Mojolicious::Controller';
 use Mojolicious::Static;

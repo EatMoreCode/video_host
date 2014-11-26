@@ -1,14 +1,13 @@
-package VideoHost::Video::Storage;
+package App::VideoHost::Video::Storage;
 
 use Moose;
 use File::Spec;
 
-use VideoHost::Video;
+use App::VideoHost::Video;
 
 use Carp qw/croak/;
 
 has 'directory' => ( is => 'rw' );
-
 
 sub check_errors {
   my $self = shift;
@@ -47,7 +46,7 @@ sub video_dirs {
 sub list {
   my $self = shift;
   return reverse sort { $a->metadata('date') cmp $b->metadata('date') }
-          map { VideoHost::Video->new(directory => $_) }
+          map { App::VideoHost::Video->new(directory => $_) }
           $self->video_dirs;
 }
 
