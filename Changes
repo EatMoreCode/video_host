@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+    * Add meta resources
+
 0.143301  2014-11-26 17:23:52 Australia/Adelaide
 
     * Fix dist.ini 
