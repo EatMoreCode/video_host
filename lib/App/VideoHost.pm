@@ -6,13 +6,7 @@ use App::VideoHost::Video::Storage;
 use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 
-=head1 NAME
-
-App::VideoHost - Filesystem based personal video hosting
-
-=head2 VERSION
-
-version 0.0
+# ABSTRACT: Filesystem based personal video hosting
 
 =head1 SYNOPSIS
 

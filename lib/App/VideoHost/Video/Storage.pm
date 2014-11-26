@@ -1,5 +1,7 @@
 package App::VideoHost::Video::Storage;
 
+# ABSTRACT: Manage a list of L<App::VideoHost::Video>s
+
 use Moose;
 use File::Spec;
 

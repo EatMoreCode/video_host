@@ -1,5 +1,7 @@
 package App::VideoHost::Video;
 
+# ABSTRACT: Encapsulate a single video
+
 use Moose;
 use File::Spec;
 use Carp qw/croak confess/;
