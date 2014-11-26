@@ -12,8 +12,6 @@ VideoHost - filesystem based personal video hosting
 
 =cut
 
-$VideoHost::VERSION = 0.1;
-
 # This method will run once at server start
 sub startup {
   my $self = shift;
