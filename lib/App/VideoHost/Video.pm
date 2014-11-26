@@ -8,8 +8,25 @@ use Carp qw/croak confess/;
 
 has 'directory' => (is => 'rw');
 
+=head1 SYNOPSIS
+
+    # /foo/bar/baz contains video.mp4 and metadata.txt
+    my $video = App::VideoHost::Video->new(directory => '/foo/bar/baz');
+    $video->check;
+
+=method check
+
+Check this video for correct metadata.
+
+Throws an exception if there is a problem with the video or it's related files.
+
+=cut
+
 sub check {
   my $self = shift;
+
+  # XXX there is room for a lot of optimisation here!
+
   die "no directory set\n"         unless $self->directory;
   die "directory does not exist\n" unless -d $self->directory;
 
@@ -37,6 +54,12 @@ sub title { my $title = shift->metadata('title'); croak "no title" unless $title
 sub file  { return shift->path_to('video') }
 sub poster { return shift->path_to('poster') }
 sub tracks { return shift->path_to('tracks') }
+
+=method metadata
+
+Return the value for a given key for this L<App::VideoHost::Video> object.
+
+=cut
 
 sub metadata {
   my $self = shift;
