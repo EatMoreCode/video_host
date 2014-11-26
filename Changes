@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+    * Update documentation
+
 0.143303  2014-11-26 18:42:24 Australia/Adelaide (TRIAL RELEASE)
 
     * Correct dist name in dist.ini
