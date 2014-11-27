@@ -1,5 +1,7 @@
 package App::VideoHost::Controller::Root;
 
+# ABSTRACT: Controller class for serving videos
+
 use Mojo::Base 'Mojolicious::Controller';
 use Mojolicious::Static;
 
